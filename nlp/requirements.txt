@@ -1,0 +1,8 @@
+transformers>=2.8.0
+tqdm
+torch>=1.0.1
+numpy
+scikit-learn
+scipy
+nltk
+sentence-transformers : pip install -U sentence-transformers
