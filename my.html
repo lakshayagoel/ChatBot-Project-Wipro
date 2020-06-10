@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Queries ChatBot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="script.js"></script>
+</head>
+<body>
+    <div class="chatbot">
+        <div class="header">
+            <div id="landing" class="bgcolor textcolor">        
+                <span class="fas fa-4x"><img class="logo1" src="logo.jpg" /></span>
+                <div>
+                    <h1 class="textcolor">Chatbot</h1>
+                    <p class="align">Hi! My name is Bob. I am here to answer all Student related Queries. </p>
+                </div>
+                <form id="form-start">
+                    <input type="text" name="username" id="username" class="textbox" placeholder="Enter you name" required>
+                    <button type="submit" class="start-chat">Start chat</button>
+                </form>
+            </div>
+
+            <div id="header" class="bg-dark">
+                <div><button id="back-button" class="text-light btn-transparent btn-icon fas fa-arrow-left"></button>
+                </div>
+                <div class="text-light align-center">
+                    <h2 class="textt">Student Chatbot</h2>
+                </div>
+
+                <div>
+                    <button id="nav-icon" class="text-light btn-transparent btn-icon fas fa-bars"></button>
+                    <nav id="nav-container" style="display: none;">
+                        <ul class="nav">
+                            <li id="sign-out" class="nav-link"><span class="fas fa-sign-out-alt"></span>Exit</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="message-board">
+            </div>
+            <div id="form" class="bg-light">
+                <div id="emoijis" style="display: none;">
+                    <button class="smiley btn-transparent btn-icon"><span class="far fa-grin-beam"></span></button>
+                    <button class="smiley btn-transparent btn-icon"><span class="far fa-grin"></span></button>
+                </div>
+                <div><button id="emoi" class="btn-transparent btn-icon far fa-grin"></button></div>
+                <div id="message" placeholder="Type your message here" rows="1" contenteditable></div>
+                <div><button id="send" type="" class="btn-transparent btn-icon fas fa-paper-plane apireq"></button></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
