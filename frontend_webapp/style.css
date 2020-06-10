@@ -1,0 +1,269 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+.chatbot {
+  margin: 20px auto;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 720px;
+  position: relative;
+  overflow: hidden;                         
+
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bgcolor {
+  background:rgb(19, 136, 29);
+}
+
+.bg-light {
+  background: hsla(231, 10%, 90%, 0.8);
+}
+
+.textcolor {
+  color: white;
+}
+
+.align-center {
+  text-align: center;
+}
+
+nav#nav-container {
+  background: white;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 2px 0;
+  margin: 8px 0;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 40px;
+}
+
+.nav-link > span {
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+a,
+button,
+.link,
+.nav-link {
+  cursor: pointer;
+}
+
+.btn-transparent {
+  border: 0;
+  background: 0;
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.logo1{
+    height:90px;
+    width:100px;
+    text-align: justify;
+    padding-top:100px;
+}
+.header {
+  background: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  position: relative;
+  top: 47px;
+  left: 19px;
+  height: 608px;
+  width: 325px;
+  display: grid;
+  grid-template-rows: 50px 1fr auto;
+}
+.bg-dark{
+  background-color: green;
+}
+.textt{
+  font-weight: bolder;
+  color:white;
+}
+
+div#landing {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+span.fas.fa-robot {
+  align-self:center;
+  
+}
+
+.textbox {
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #290f8587;
+  margin: 15px 0;
+  width: 100%;
+}
+
+#form-start {
+  align-self:top;
+  font-size: small;
+  width: 300px;
+  padding-right:7px;
+}
+.align{
+  padding-right:10px;
+}
+
+.start-chat {
+  background: #151381;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+#header,
+#form {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  align-items: center;
+}
+
+#header {
+  padding: 6px;
+}
+
+#message-board {
+  display: grid;
+  align-self: end;
+  grid-auto-rows: minmax(min-content, max-content);
+  padding: 5px 0;
+  box-sizing: border-box;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.post {
+  position: relative;
+  margin: 4px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.post-user {
+  justify-self: right;
+  margin-right: 50px;
+  background: rgba(222, 236, 28, 0.89);
+  
+}
+
+.post-bot {
+  justify-self: left;
+  margin-left: 50px;
+  background: white;
+}
+
+.post:after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 0;
+}
+
+.post-user:after {
+  left: -10px;
+  border-right-color: rgba(255, 152, 0, 0.1);
+  border-left: 0;
+}
+
+.post-bot:after {
+  right: -10px;
+  border-left-color: rgba(64, 83, 191, 0.1);
+  border-right: 0;
+}
+
+.timestamp {
+  font-size: 0.6em;
+  opacity: 0.5;
+  margin: 5px 0 -5px;
+  display: block;
+  color:black;
+}
+
+
+#form {
+  padding: 6px;
+  grid-template-rows: auto 1fr;
+}
+
+#emoijis {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 5px;
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}
+
+#message {
+  padding: 5px;
+  font-size: 1rem;
+  min-height: 25px;
+  max-height: 25vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.29);
+  font-style: italic;
+  outline: none;
+  resize: none;
+}
+
+#form.focus {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+#message.focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
