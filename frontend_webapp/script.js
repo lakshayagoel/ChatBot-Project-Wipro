@@ -43,16 +43,29 @@ $(document).ready(() => {
         if (typeof reply === "string") postBotReply(reply);
         else reply.forEach((str) => postBotReply(str));
     }
-    $('.apireq').click(function(){
-        $.ajax({
-            url:"",
-            type:'POST'
-            dataType: "text",
-            success: function(data){
-                $('#message').empty().append(data);
+     $.ajax({
+            url: "http://104.215.195.198/api/messages/",
+            type: 'POST',
+            crossDomain: true,
+            data: JSON.stringify({ "messages": userMessage }),
+            success: function(data) {
+                console.log(data)
+                reply = data.message
+                console.log(reply)
+            },
+            error: function(xhr, status, error) {
+                console.log(error, status)
+            },
+            complete: function(xhr, status) {
+                console.log(status)
+                if (status != 'success')
+                    reply = [`I am here to help. What seems to be the problem?`];
+
+                botReply(reply);
             }
         });
-    }); 
+    }
+
     function generateReply(userMessage) {
         const message = userMessage.toLowerCase();
         let reply = [`Sorry, I didn't understand you. Please try again`];    
