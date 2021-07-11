@@ -43,7 +43,7 @@ $(document).ready(() => {
         if (typeof reply === "string") postBotReply(reply);
         else reply.forEach((str) => postBotReply(str));
     }
-    /* $('.apireq').click(function(){
+    $('.apireq').click(function(){
         $.ajax({
             url:"",
             type:'POST'
@@ -52,7 +52,7 @@ $(document).ready(() => {
                 $('#message').empty().append(data);
             }
         });
-    }); */
+    }); 
     function generateReply(userMessage) {
         const message = userMessage.toLowerCase();
         let reply = [`Sorry, I didn't understand you. Please try again`];    
